@@ -1,7 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-if (!API_BASE_URL) {
-  throw new Error("Environment variable VITE_API_BASE_URL is not set. Cannot initialize API client.");
-}
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "https://sns-backend-production-0668.up.railway.app";
 
 export { API_BASE_URL };
 
